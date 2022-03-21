@@ -4,7 +4,8 @@
   "description": "Our first Node.js project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha || true",
+    "coverage": "nyc npm run test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/j-kimbrough/nodejs-project/issues"
   },
-  "homepage": "https://github.com/j-kimbrough/nodejs-project#readme"
+  "homepage": "https://github.com/j-kimbrough/nodejs-project#readme",
+  "keywords": [],
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-asserttype": "^1.0.5",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0"
+  }
 }
